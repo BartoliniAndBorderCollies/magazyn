@@ -45,8 +45,12 @@ public class Warehouse {
     }
 
     public void displayProducts() {
-        System.out.println(getProducts().toString());
+        for (Product product : products) {
+            System.out.println(product.toString());
+        }
     }
+
+
 
     
 }

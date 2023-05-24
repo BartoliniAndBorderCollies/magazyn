@@ -9,4 +9,13 @@ public class Product {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", value=" + value +
+                ", measureUnit=" + measureUnit +
+                '}';
+    }
 }
