@@ -6,5 +6,7 @@ public class Product {
     private int value;
     private int measureUnit;
 
-
+    public String getName() {
+        return name;
+    }
 }
