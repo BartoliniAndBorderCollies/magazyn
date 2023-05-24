@@ -4,7 +4,13 @@ public class Product {
 
     private String name;
     private int value;
-    private int measureUnit;
+    private String measureUnit;
+
+    public Product(String name, int value, String measureUnit) {
+        this.name = name;
+        this.value = value;
+        this.measureUnit = measureUnit;
+    }
 
     public String getName() {
         return name;
@@ -12,10 +18,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", value=" + value +
-                ", measureUnit=" + measureUnit +
-                '}';
+        return "Product name: " + name + ", " +
+                "value: " + value + " PLN " + ", " +
+                "measure unit: " + measureUnit;
     }
 }

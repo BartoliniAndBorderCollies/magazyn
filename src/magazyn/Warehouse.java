@@ -1,6 +1,5 @@
 package magazyn;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Warehouse {
@@ -8,17 +7,12 @@ public class Warehouse {
     private List<Product> products;
 
     public Warehouse(List<Product> products) {
-        this.products = new ArrayList<>();
-    }
-
-    public List<Product> getProducts() {
-        return products;
+        this.products = products;
     }
 
     public void addProduct(Product product, int quantity) {
         for(int i =0; i<quantity; i++) {
          products.add(product);
-         i++;
         }
     }
 
@@ -40,7 +34,6 @@ public class Warehouse {
 
         for(int i =0; i<quantityToRemove; i++){
             products.remove(findProduct(name));
-            i++;
         }
     }
 
